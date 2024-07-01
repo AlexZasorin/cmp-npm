@@ -17,6 +17,10 @@ function source:is_available()
   return filename == "package.json"
 end
 
+function source:get_trigger_characters()
+	return { '"' }
+end
+
 function source:get_debug_name()
   return 'npm'
 end
